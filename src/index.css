@@ -1,6 +1,8 @@
 /* global css sheet here */
+
 /* font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 /* root all pages */
 *{
   margin: 0;
@@ -23,7 +25,6 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition:all 400ms ease;
-  
 }
 
 /* scroll bar */
