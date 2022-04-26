@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Experince from './components/experience/Experince';

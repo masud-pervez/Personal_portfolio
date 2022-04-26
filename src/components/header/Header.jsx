@@ -12,12 +12,12 @@ const header = () => {
       <div className="container header_container">
         <h4>Hello I'm</h4>
         <h1>MASUD PERVEZ</h1>
-        <h4>Fullstack Developer</h4>
-
+        <h4 className='mt-2'>Fullstack Developer</h4>
+        
         <CTA />
         <HeaderSocial />
         <div className="me">
-          <img className='me_image' src={ME} alt="" />
+          <img className='me_image img-fluid' src={ME} alt="" />
         </div>
         <a href="#contact" className='scroll_down'>Scroll Down</a>
       </div>

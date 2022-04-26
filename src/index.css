@@ -37,9 +37,9 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-white);
-  background-image: url(../src/assets/bg-texture.png);
+  background: var(--color-bg) !important;
+  color: var(--color-white) !important;
+  background-image: url(../src/assets/bg-texture.png) !important;
  }
 
 /* ======== GENERAL style ======= */
@@ -57,7 +57,6 @@ h1{
 
 section{
   margin-top: 8rem;
-  height: 100vh;
 }
 
 section > h2, 

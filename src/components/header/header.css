@@ -9,6 +9,35 @@ header{
   position: relative;
 }
 
+/* ======= css animation ======== */
+.header_container h1{
+  font: 6rem;
+  padding: 20px 0;
+  letter-spacing: 5px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+/* @keyframes animate{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    text-shadow: none;
+    color: var(--color-primary-variant);
+  }
+  18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+    color: #fff;
+    text-shadow: 0 0 10px var(--color-primary),
+                0 0 20px var(--color-primary),
+                0 0 30px var(--color-primary),
+                0 0 50px var(--color-primary),
+                0 0 80px var(--color-primary)
+
+  }
+} */
+
 /* ========== CTA ========= */
 .cta{
   margin-top: 2.5rem;
@@ -64,7 +93,7 @@ header{
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width:1024px) {
   header{
-    height: 70vh;
+    height: 90vh;
   }
 }
 /* MEDIA QUERIES (SMALL DEVICES) */
