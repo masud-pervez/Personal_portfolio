@@ -1,4 +1,3 @@
-/* ===== Container ======= */
 
 /* ===== image ======= */
 .about_me{
@@ -10,8 +9,8 @@
     transparent
   );
   place-items: center;
-
 }
+
 .about_me-image{
   border-radius: 2rem;
   overflow: hidden;

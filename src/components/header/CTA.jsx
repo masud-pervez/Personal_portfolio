@@ -1,10 +1,10 @@
 import React from 'react'
-// insert cv next time
+import { Link } from 'react-router-dom'
 const CTA = () => {
   return (
     <div className='cta'>
-      <a className='btn btn-outline-primary' href="">Download CV</a>
-      <a className='btn btn-primary ' href="">Let's Talk</a>
+      <button className='btn btn-outline-primary'>Download CV</button>
+      <Link className='btn btn-primary ' to="/contact">Let's Talk</Link>
     </div>
   )
 }

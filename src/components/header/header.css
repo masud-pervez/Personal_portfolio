@@ -1,6 +1,5 @@
 header{
   height: 100vh;
-  padding-top: 7rem;
   overflow: hidden;
 }
 .header_container{
@@ -22,21 +21,6 @@ header{
   animation: animate 5s linear infinite;
 }
 
-/* @keyframes animate{
-  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-    text-shadow: none;
-    color: var(--color-primary-variant);
-  }
-  18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
-    color: #fff;
-    text-shadow: 0 0 10px var(--color-primary),
-                0 0 20px var(--color-primary),
-                0 0 30px var(--color-primary),
-                0 0 50px var(--color-primary),
-                0 0 80px var(--color-primary)
-
-  }
-} */
 
 /* ========== CTA ========= */
 .cta{
@@ -88,22 +72,4 @@ header{
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
-}
-
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width:1024px) {
-  header{
-    height: 90vh;
-  }
-}
-/* MEDIA QUERIES (SMALL DEVICES) */
-@media screen and (max-width:600px) {
-  header{
-    height: 100vh;
-  }
-  .header__socials,
-  .scroll_down{
-    display: none;
-  }
-
 }
