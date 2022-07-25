@@ -1,60 +1,37 @@
 import React from "react";
 import "./portfolio.css";
-import Img1 from "../../assets/portfolio1.jpg";
-import Img2 from "../../assets/portfolio2.jpg";
-import Img3 from "../../assets/portfolio3.jpg";
-import Img4 from "../../assets/portfolio4.jpg";
-import Img5 from "../../assets/portfolio5.png";
-import Img6 from "../../assets/portfolio6.jpg";
+import Img1 from "../../assets/pointofsale.jpg";
+import Img2 from "../../assets/portfolio6.jpg";
+import Img3 from "../../assets/todoapp.jpg";
+import { Link, Outlet } from "react-router-dom";
 
 const data = [
   {
     id: 1,
     image: Img1,
-    title: "Crypto Currency Dashboard & financial Visualization",
+    title: "POS ~ Point Of Sale",
     github: "https://github.com/masudpervez05",
-    demo: "#",
+    demo: "/portfolio/pos",
   },
   {
     id: 2,
     image: Img2,
-    title: "Charts template & infographics in figma",
+    title: "Counter App",
     github: "https://github.com/masudpervez05",
-    demo: "#",
+    demo: "/portfolio/Counters",
   },
   {
     id: 3,
     image: Img3,
-    title: "Figma Dashboard UI kit for data desgin web app",
+    title: "TodoApp",
     github: "https://github.com/masudpervez05",
-    demo: "#",
-  },
-  {
-    id: 4,
-    image: Img4,
-    title: "Maintaing tasks and tracking progress",
-    github: "https://github.com/masudpervez05",
-    demo: "#",
-  },
-  {
-    id: 5,
-    image: Img5,
-    title: "Charts template & infographics in figma",
-    github: "https://github.com/masudpervez05",
-    demo: "#",
-  },
-  {
-    id: 6,
-    image: Img6,
-    title: "Charts template & infographics in figma",
-    github: "https://github.com/masudpervez05",
-    demo: "#",
+    demo: "/portfolio/todoapp",
   }
 ];
 
 const portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="my-5">
       <h5>My Recent Work</h5>
       <h2>portfolio</h2>
       <div className="container portdolio_container">
@@ -65,26 +42,27 @@ const portfolio = () => {
               <div className="portfolio_item_image">
                 <img src={image} alt="portfolio1" />
               </div>
-              <h3>{title}</h3>
+              <h3 className="text-light fs-5" >{title}</h3>
               <div className="portfolio_item_cta">
                 <a
                   href={github}
-                  target="_blank"
-                  className="btn"
+                  target="blank"
+                  className="btn btn-outline-light"
                 >
                   Github
                 </a>
-                <a
-                  href={demo}
-                  target="_blank"
+                <Link
+                  to={demo}
+                  target="blank"
                   className="btn btn-primary"
                 >
                   Live Demo
-                </a>
+                </Link>
               </div>
             </article>
           );
         })}
+        {Outlet}
       </div>
     </section>
   );

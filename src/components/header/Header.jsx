@@ -3,6 +3,7 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocial from "./HeaderSocial";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -21,9 +22,9 @@ const header = () => {
           <div className="me">
             <img className="me_image img-fluid" src={ME} alt="" />
           </div>
-          <a href="#contact" className="scroll_down d-none d-md-block">
-            Scroll Down
-          </a>
+          <Link to='/' target='blank' className="scroll_down d-none d-md-block">
+            Masud Pervez
+          </Link>
         </div>
       </div>
     </header>

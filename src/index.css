@@ -56,7 +56,8 @@ h1{
 }
 
 section{
-  margin-top: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
 section > h2, 
@@ -68,6 +69,10 @@ section > h5{
 section > h2{
   color: var(--color-primary);
   margin-bottom: 3rem;
+}
+
+#portfolio{
+  margin-bottom: 10rem !important;
 }
 .text-light{
   color: var(--color-primary);
@@ -121,4 +126,35 @@ img{
   selection{
     margin-top: 2rem;
   }
+}
+
+.delete-btn{
+  padding: 1px;
+  border: 1px solid #055160;
+  border-radius: 2px;
+  transition: all 0.1s;
+  color: #055160;
+  cursor:pointer;
+}
+.delete-btn:hover{
+  border-color: #F92F60;
+  color: #F92F60;
+}
+
+.edit-btn{
+  padding: 1px;
+  border: 1px solid #055160;
+  border-radius: 2px;
+  transition: all 0.1s;
+  color: #055160;
+  cursor:pointer;
+}
+.edit-btn:hover{
+  border-color: #2cc331;
+  color: #2cc331;
+}
+
+.display-content:hover{
+  background: linear-gradient(90deg, rgba(122,226,170,1) 0%,  rgba(18,222,224,1) 100%);
+  transition:all 0.5s;
 }
